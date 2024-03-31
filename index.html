@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran Play Project</title>
+    <script src="./script.js" async></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <input type="checkbox" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner top"></div>
+      <div class="spinner middle"></div>
+      <div class="spinner bottom"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="menu">
+        <li><a href="#">About Quran</a></li>
+        <li><a href="#">Al-Juz</a></li>
+        <li><a href="#">Al-Surah</a></li>
+        <li><a href="#">Favourite</a></li>
+        <li><a href="#">Quran Radio</a></li>
+        <li><a href="#">Reciters</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+    <!-- Create DropDown Bar  -->
+
+    <div class="dropdown">
+      <button onclick="toggleDropdown()">Dropdown</button>
+      <div id="dropdownContent" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+      </div>
+  </div>
+ 
+    <div class="main">
+      <h1>Al-Quran</h1>
+      <div class="side-menu-bar" id="side-menu-bar"></div>
+      <!-- Page Content -->
+      <div class="container">
+        <div class="card">
+          <div class="card-header" id="card-header"></div>
+          <div class="card-content" id="card-content"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
